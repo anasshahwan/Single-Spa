@@ -2,17 +2,14 @@ import { registerApplication, start } from "single-spa";
 
 registerApplication({
   name: "@single-spa/welcome",
-  app: () =>
-    System.import(
-      "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
-    ),
+  app: () => System.import("@single-spa/welcomee"),
   activeWhen: ["/"],
 });
 
 // registerApplication({
 //   name: "@spa-course/navbar",
 //   app: () => System.import("@spa-course/navbar"),
-//   activeWhen: ["/"]
+//   activeWhen: ["/"],
 // });
 
 start({
